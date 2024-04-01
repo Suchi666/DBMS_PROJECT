@@ -11,3 +11,20 @@ Python driver file. Also segregates first 87000 products and relationships into 
 
 In URL, put your Neo4jd database URL with `neo4j+ssc` form instead of `neo4j+s`
 
+## Code
+
+### json_to_csv.py:
+contains code to convert input json file (here Data/data.json) to products.csv and categories.csv 
+
+### main.py
+only file to be executed
+ ```bash
+      python main.py
+ ```
+
+## Outputs
+
+Contains products.csv and categories.csv
+Also contains neo4j model developed, to convert this csv files to graph database in neo4j.
+To utilise this zip file, set up an instance of neo4j Aura DB, go to Import tab, and select Open model (with data) option. 
+Explore, have fun.
