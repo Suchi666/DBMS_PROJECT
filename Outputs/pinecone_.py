@@ -1,0 +1,2 @@
+from sentence_transformers import SentenceTransformer
+from pinecone.client import Client
