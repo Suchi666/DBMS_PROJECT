@@ -27,8 +27,11 @@ def json_to_csv(input_file, products_output_file, categories_output_file):
     with open(products_output_file, 'w', newline='') as products_csv:
         products_writer = csv.writer(products_csv)
         products_writer.writerow(['ASIN', 'title', 'group', 'sales_rank', 'category_id', 'similar_ASINs'])
-
+        count = 0
         for entry in data.values():
+            count = count + 1
+            if count == 50000: # considers only 50,000 products
+                break
             asin = entry['ASIN']
             title = entry['title']
             group = entry['group']
@@ -40,6 +43,6 @@ def json_to_csv(input_file, products_output_file, categories_output_file):
                     product_key = (asin, category_id)  # Unique key for a product entry
                     if product_key not in written_products:
                       written_products.add(product_key)
-                      for similar_asin in entry['similar'][1:]:  # Exclude the first item
+                      for similar_asin in entry['similar']: 
                           products_writer.writerow([asin, title, group, sales_rank, category_id, similar_asin])
                       
