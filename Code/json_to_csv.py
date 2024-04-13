@@ -30,7 +30,7 @@ def json_to_csv(input_file, products_output_file, categories_output_file):
         count = 0
         for entry in data.values():
             count = count + 1
-            if count == 50000: # considers only 50,000 products
+            if count == 8000: # considers only 8,000 products
                 break
             asin = entry['ASIN']
             title = entry['title']
