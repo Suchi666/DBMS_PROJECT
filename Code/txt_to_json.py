@@ -18,12 +18,16 @@ def txt_to_list(input_file):
 
 def parse_items_list(items_list):
     data = {}
+    count = -1
     for _, lines in items_list.items():
         current_entry = {}
         reviews_info = None
         categories_count = 0
         review = 0
         categories_lines = []
+        count = count + 1
+        if count == 8000: # considers only 8,000 products
+            break
         for line in lines:
             if line.startswith("Id:"):
                 current_entry["Id"] = line.split()[1]
@@ -37,9 +41,11 @@ def parse_items_list(items_list):
                         current_entry[key] = value.strip()
                     elif key in ["title", "group", "salesrank"]:
                         current_entry[key] = value.strip()
+                        '''
                         if key == "group" and current_entry[key] != "Book":
                             current_entry = None
                             break 
+                        '''
                     elif key == "similar":
                         current_entry[key] = value.strip().split()[1:]
                     elif key == "categories":
@@ -82,8 +88,13 @@ def write_list_to_file(items_list, output_file):
 
 def txt_to_json(input_file, output_file):
     items_list = txt_to_list(input_file=input_file)
+    print("step 1.1 done")
     write_list_to_file(items_list, "../Outputs/items_list.txt")
+    print("step 1.2 done")
     data = parse_items_list(items_list=items_list)
+    print("step 1.3 done")
     with open(output_file, 'w') as file:
         json.dump(data, file, indent=4)
+        print("step 1.4 done")
+
 
