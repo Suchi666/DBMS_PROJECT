@@ -1,0 +1,8 @@
+Item type: Book
+Item name: Patterns of Preaching: A Sermon Sampler",
+salesrank: "396585",
+this book is related to: Religion & Spirituality,ChristianityClergy,Preaching,Sermons
+Reviews details given by customers for this product
+total reviews : 2,
+total downloaded: 2,
+average rating: 5
