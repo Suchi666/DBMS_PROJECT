@@ -16,10 +16,10 @@ In URL, put your Neo4jd database URL with `neo4j+ssc` form instead of `neo4j+s`
 ### json_to_csv.py:
 contains code to convert input json file (here Data/data.json) to products.csv and categories.csv 
 
-### main.py
-only file to be executed
+### app2.py
+driver file for neo4js and flask website
  ```bash
-      python main.py
+      python app2.py
  ```
 
 ## Outputs
