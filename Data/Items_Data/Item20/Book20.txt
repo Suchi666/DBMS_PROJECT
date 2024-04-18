@@ -1,0 +1,9 @@
+
+  Computed Tomography : Fundamentals, System Technology, Image Quality, Applications
+
+As indicated in the title, this book is helpful and nice for anyone who are interested in or working in the field of Computed Tomography. It is a handy book for fast reviewing the important issues in the development of CT scanners. However, you may need to have a little bit basic knowledge before start reading this book. The author uses an concise way to describe important issues within the context of CT technologies. These issues include the basic mechanisms, the development of the state of art CT scanners, the tendency in the future, etc. This book covers a wide range of topics, but it has only 268 pages. So, if you are a beginner in medical imaging or you don't have much engineering related background, it may turn out to be a confused and frustrated reading experiences.
+
+
+I am teaching an Introduction to Medical Imaging Course at the 3rd to 4th year undergraduate level but also including some graduate students at an engineering school. I was looking for an up-to-date review of x-ray computed tomography. This book is it. It surveys the entire topic from historical events to the latest in multi-slice systems. One of the nicest features of the book is the included CD-ROM. It includes all figures used in the book, addition videos of recontruction examples, a case study folder, a multi-slice image (demo) viewer, as well as a demo version of program that calculates patient dose for CT proceedures. These additional tools have made my teaching preparation much easier. I highly recommend this book as a reference for undergraduate and graduate students, medical physicists, and medical students as well as those in the field that need an up-to-date review.
+
+Very academic.

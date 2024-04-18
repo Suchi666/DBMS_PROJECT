@@ -1,0 +1,10 @@
+Item type: Book
+Item name: Computed Tomography: Fundamentals, System Technology, Image Quality, Applications
+Sales rank: 179,448
+This book is related to: Medicine (Specialties: Radiology, Internal Medicine), Computers & Internet
+
+Reviews details given by customers for this product:
+
+Total reviews: 1
+Total downloaded: 1
+Average rating: 5
